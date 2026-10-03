@@ -1,8 +1,8 @@
 export default function Footer() {
     return(
         <>
-            <footer>
-                <p> 2026 Academia React / realizada por un dios</p>
+            <footer className="bg-gray-900 text-white text-center py-6 mt-12">
+                <p>&copy; 2026 Tu Empresa. Todos los derechos reservados.</p>
             </footer>
         </>
     )
