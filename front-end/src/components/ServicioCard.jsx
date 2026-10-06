@@ -1,5 +1,5 @@
-function ProductosCard({nombre,descripcion,cant}) {
-    return(
+function ServicioCard({ nombre, descripcion, etiqueta, icono }) {
+    return (
         <>
             <div className="
             bg-white
@@ -11,6 +11,9 @@ function ProductosCard({nombre,descripcion,cant}) {
             duration-300
             p-6"
             >
+                <div className="text-6xl text-center">
+                    {icono}
+                </div>
                 <h2 className="text-2xl font-bold text-center mt-4">
                     {nombre}
                 </h2>
@@ -19,29 +22,31 @@ function ProductosCard({nombre,descripcion,cant}) {
                 </p>
                 <div className="mt-4 text-center">
                     <span className="
-                        bg-blue-100
-                        text-blue-700
-                        px-3
-                        py-1
-                        rounded-full
-                        text-bold
-                        text-sm">
-                            {cant}
+                    bg-teal-100
+                    text-teal-700
+                    px-3
+                    py-1
+                    rounded-full
+                    font-bold
+                    text-sm">
+                        {etiqueta}
                     </span>
                 </div>
                 <button className="
                 w-full
                 mt-5
-                bg-indigo-600
-                hover:bg-indigo-700
+                bg-blue-600
+                hover:bg-blue-700
                 text-white
                 py-2
                 rounded-lg
-                font-semibold">
-                    Ver Mas
+                font-semibold
+                transition">
+                    Solicitar Ayuda
                 </button>
             </div>
         </>
-    )
+    );
 }
-export default ProductosCard
+
+export default ServicioCard;

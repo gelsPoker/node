@@ -1,20 +1,16 @@
-import {BrowserRouter as Router, Routes, Route, BrowserRouter} from "react-router-dom"
-import Cursos from "./pages/Cursos"
-import Clientes from "./pages/Clientes"
-import Productos from "./pages/Productos"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import Solicitudes from "./pages/Solicitudes"; 
+
 function App() {
   return (
-    <>
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Cursos/>}/>
-      <Route path='/cliente' element={<Clientes/>}/>
-      <Route path='/producto' element={<Productos/>}/>
-      
-    </Routes>
+      <Routes>
+        <Route path='/' element={<Inicio />} />
+        <Route path='/solicitudes' element={<Solicitudes />} />
+      </Routes>
     </BrowserRouter>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
